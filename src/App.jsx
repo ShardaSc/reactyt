@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Card from './components/Card'
 
 
 const App = () => {
@@ -15,16 +16,7 @@ const App = () => {
 
   return (
     <div>
-      <form onSubmit={(e)=>
-        submitHandler(e)
-        }>
-        <input 
-        value={username}
-        onChange ={(e)=>{
-          setUsername(e.target.value)
-        }} placeholder='Enter name'></input>
-        <button>Submit</button>
-      </form>
+      <Card a ='Abc'></Card>
 
     </div>
   )
