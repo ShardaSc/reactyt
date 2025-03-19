@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Card from './components/Card'
 import E1 from './components/E1'
 import axios from 'axios'
@@ -49,12 +49,14 @@ const App = () => {
     const response =  await axios.get('https://picsum.photos/v2/list')
     setData (response.data)
   }
- 
+ useEffect(() => {
+  getdata()
+ })
 
 
   return (
     <div className='p-10 bg-black'>
-      <button onClick={getdata} className='bg-teal-700 text-white text-2xl px-6 py-3 rounded active:scale-90'>Get Data</button>
+      {/* <button onClick={getdata} className='bg-teal-700 text-white text-2xl px-6 py-3 rounded active:scale-90'>Get Data</button> */}
       <div className='p-5 mt-5 bg-gray-950 text-white'></div>
       {
         data.map(function(elem,idx){
