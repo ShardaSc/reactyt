@@ -60,6 +60,7 @@ const App = () => {
     <div >
       {/* <button onClick={getdata} className='bg-teal-700 text-white text-2xl px-6 py-3 rounded active:scale-90'>Get Data</button> */}
       {/* <div className='p-5 mt-5 bg-gray-950 text-white'></div> */}
+      <E1/>
       <Routes>
         <Route path='/about' element= {<AboutUs />}/>
       </Routes>
