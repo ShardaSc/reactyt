@@ -45,25 +45,27 @@ const users =[
 
 const App = () => {
 
-  const [data,setData] =useState([])
-  // const user = "ABC"
-  const getdata =async () =>{
-    const response =  await axios.get('https://picsum.photos/v2/list')
-    setData (response.data)
-  }
- useEffect(() => {
-  getdata()
- })
+//   const [data,setData] =useState([])
+//   // const user = "ABC"
+//   const getdata =async () =>{
+//     const response =  await axios.get('https://picsum.photos/v2/list')
+//     setData (response.data)
+//   }
+//  useEffect(() => {
+//   getdata()
+//  })
 
 
   return (
     <div >
+      <E1/>
+      <h1>This is app</h1>
       {/* <button onClick={getdata} className='bg-teal-700 text-white text-2xl px-6 py-3 rounded active:scale-90'>Get Data</button> */}
       {/* <div className='p-5 mt-5 bg-gray-950 text-white'></div> */}
-      <E1/>
+      {/* <E1/>
       <Routes>
         <Route path='/about' element= {<AboutUs />}/>
-      </Routes>
+      </Routes> */}
       {/* {
         data.map(function(elem,idx){
           return <div key={idx} className='bg-gray-500 text-black flex items-center justify-between w-full px-7 py -6 rounded mb-3'>
